@@ -5,14 +5,35 @@ import { Link } from "gatsby";
 function GetNavList(config) {
   const NavList = [
     {
-      primaryText: "Home",
+      primaryText: "Página principal",
       leftIcon: <FontIcon>home</FontIcon>,
       component: Link,
       to: "/"
     },
     {
       divider: true
-    }
+    },
+    {
+      primaryText: "Experiencia laboral",
+      leftIcon: <FontIcon>business_center</FontIcon>,
+      component: Link,
+      to: "/"
+    },
+    {
+      primaryText: "Tecnologías",
+      leftIcon: <FontIcon>alternate_email</FontIcon>,
+      component: Link,
+      to: "/"
+    },
+    {
+      primaryText: "Formación académica",
+      leftIcon: <FontIcon>school</FontIcon>,
+      component: Link,
+      to: "/"
+    },
+    {
+      divider: true
+    },
   ];
 
   if (config.userLinks) {
